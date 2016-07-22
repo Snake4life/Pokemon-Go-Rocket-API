@@ -60,7 +60,7 @@ namespace PokemonGo.RocketAPI.Logic
                 try
                 {
                     await DisplayPlayerLevelInTitle();
-                    await EvolveAllPokemonWithEnoughCandy();
+                    await EvolveAllPokemonWithEnoughCandy(_clientSettings.PokemonsToEvolve);
                     await TransferDuplicatePokemon();
                     await RecycleItems();
                     await ExecuteFarmingPokestopsAndPokemons();
